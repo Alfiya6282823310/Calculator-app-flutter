@@ -1,4 +1,5 @@
 import 'package:calculator/pages/addition.dart';
+import 'package:calculator/pages/division.dart';
 import 'package:calculator/pages/multiplication.dart';
 import 'package:calculator/pages/subtraction.dart';
 import 'package:flutter/material.dart';
@@ -77,7 +78,10 @@ class homepage extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green
                   ),
-                  onPressed: (){}, child:
+                  onPressed: (){
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>divisionpage()));
+                  }, child:
               Text("DIVISION",
                 style: TextStyle(color: Colors.black,
                     fontSize: 21,

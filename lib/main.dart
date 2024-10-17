@@ -1,3 +1,6 @@
+
+
+import 'package:calculator/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -15,14 +18,7 @@ home: Scaffold(
 backgroundColor: Colors.amber,
 title: Text("calculator"),
   ),
-  body: Container(
-    child: Column(
-      children: [
-
-      ],
-    ),
-  ),
-
+  body: homepage(),
 ),
     );
   }

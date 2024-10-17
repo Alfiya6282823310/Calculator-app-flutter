@@ -1,3 +1,4 @@
+import 'package:calculator/pages/addition.dart';
 import 'package:flutter/material.dart';
 
 class homepage extends StatelessWidget {
@@ -20,7 +21,10 @@ class homepage extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green
                   ),
-                  onPressed: (){}, child:
+                  onPressed: (){
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>additionpage()));
+                  }, child:
               Text("ADDITION",
                 style: TextStyle(color: Colors.black,
                     fontSize: 21,
